@@ -1,6 +1,6 @@
 'use client';
 
-import { use, useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { useStore } from '@/lib/store';
 import { notFound } from 'next/navigation';
 import { TrendingUp, TrendingDown, Users, DollarSign, Calendar, MapPin, User } from 'lucide-react';
@@ -20,15 +20,15 @@ import {
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler);
 
-export default function AthletePage({ params }: { params: Promise<{ symbol: string }> }) {
-  const unwrappedParams = use(params);
+export default function AthletePage({ params }: { params: { symbol: string } }) {
+  const { symbol } = params;
   const { state } = useStore();
   const [tradeModalOpen, setTradeModalOpen] = useState(false);
   const [tradeMode, setTradeMode] = useState<'buy' | 'sell'>('buy');
   const [timeframe, setTimeframe] = useState<'1D' | '1W' | '1M'>('1W');
 
-  const athlete = state.athletes.find(a => a.symbol === unwrappedParams.symbol);
-  
+  const athlete = state.athletes.find(a => a.symbol === symbol);
+
   if (!athlete) {
     notFound();
   }
