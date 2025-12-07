@@ -106,88 +106,66 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="bg-slate-700/50 rounded-lg p-6 mb-6">
+                       <div className="bg-slate-700/50 rounded-lg p-6 mb-6">
+              <h3 className="text-xl font-bold mb-4">
+                Trading Fee Structure (5% per transaction)
+              </h3>
 
-      <h3 className="text-xl font-bold mb-4">
-        Trading Fee Structure (5% per transaction)
-      </h3>
-
-      <div className="space-y-3">
-        {/* 3% Platform Operations & Ecosystem */}
-        <div className="flex items-start space-x-3">
-          <div className="w-20 h-20 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-            <span className="text-2xl font-bold">3%</span>
-          </div>
-          <div>
-            <h4 className="font-bold mb-1">Platform Operations & Ecosystem</h4>
-            <p className="text-sm text-gray-400">
-              Covers core platform operations, security, legal &amp; compliance, product
-              development, and marketing. This share keeps ATHLX sustainable and allows the
-              ecosystem to grow over time.
-            </p>
-          </div>
-        </div>
-
-        {/* 1% Direct Athlete Reward */}
-        <div className="flex items-start space-x-3">
-          <div className="w-20 h-20 bg-green-600 rounded-lg flex items-center justify-center flex-shrink-0">
-            <span className="text-2xl font-bold">1%</span>
-          </div>
-          <div>
-            <h4 className="font-bold mb-1">Direct Athlete Reward</h4>
-            <p className="text-sm text-gray-400">
-              Paid directly to the athlete every time their token is traded. This creates
-              an instant, performance-linked income stream that helps cover training costs,
-              living expenses, and competition fees.
-            </p>
-          </div>
-        </div>
-
-        {/* 1% Lifetime Support Vault (Pension) */}
-        <div className="flex items-start space-x-3">
-          <div className="w-20 h-20 bg-purple-600 rounded-lg flex items-center justify-center flex-shrink-0">
-            <span className="text-2xl font-bold">1%</span>
-          </div>
-          <div>
-            <h4 className="font-bold mb-1">Lifetime Support Vault (Pension)</h4>
-            <p className="text-sm text-gray-400">
-              Allocated to a long-term vault dedicated to post-career support for athletes.
-              As trading volume accumulates over the years, this pool grows into a
-              pension-style safety net for life after retirement.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <p className="text-sm text-gray-400">
-        This 5% fee structure aligns incentives between the platform and athletes:
-        <strong> 3%</strong> sustains operations and ecosystem growth,
-        <strong> 1%</strong> is paid out immediately to athletes on every trade, and
-        <strong> 1%</strong> is reserved in a pension-style vault for their long-term
-        security.
-      </p>
-                  </div>
-                </div>
-                
+              <div className="space-y-3">
+                {/* 3% Platform Operations & Ecosystem */}
                 <div className="flex items-start space-x-3">
                   <div className="w-20 h-20 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl font-bold">2.5%</span>
+                    <span className="text-2xl font-bold">3%</span>
                   </div>
                   <div>
-                    <h4 className="font-bold mb-1">Platform Operations & Vault</h4>
+                    <h4 className="font-bold mb-1">Platform Operations &amp; Ecosystem</h4>
                     <p className="text-sm text-gray-400">
-                      Distributed between platform operational costs and the Athlete Lifetime Support Vault, which accumulates funds for long-term athlete retirement benefits.
+                      Covers core platform operations, security, legal &amp; compliance,
+                      product development, and marketing. This share keeps ATHLX sustainable
+                      and allows the ecosystem to grow over time.
+                    </p>
+                  </div>
+                </div>
+
+                {/* 1% Direct Athlete Reward */}
+                <div className="flex items-start space-x-3">
+                  <div className="w-20 h-20 bg-green-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="text-2xl font-bold">1%</span>
+                  </div>
+                  <div>
+                    <h4 className="font-bold mb-1">Direct Athlete Reward</h4>
+                    <p className="text-sm text-gray-400">
+                      Paid directly to the athlete every time their token is traded. This
+                      creates an instant, performance-linked income stream that helps cover
+                      training costs, living expenses, and competition fees.
+                    </p>
+                  </div>
+                </div>
+
+                {/* 1% Lifetime Support Vault (Pension) */}
+                <div className="flex items-start space-x-3">
+                  <div className="w-20 h-20 bg-purple-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="text-2xl font-bold">1%</span>
+                  </div>
+                  <div>
+                    <h4 className="font-bold mb-1">Lifetime Support Vault (Pension)</h4>
+                    <p className="text-sm text-gray-400">
+                      Allocated to a long-term vault dedicated to post-career support for
+                      athletes. As trading volume accumulates over the years, this pool grows
+                      into a pension-style safety net for life after retirement.
                     </p>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <p className="text-sm text-gray-400">
-              This fee structure ensures that every trade contributes meaningfully to athlete welfare while maintaining platform sustainability. The model aligns incentives: as trading volume increases, athletes benefit immediately and accrue long-term security.
-            </p>
-          </div>
-        </section>
+              <p className="mt-4 text-sm text-gray-400">
+                This 5% fee structure aligns incentives between the platform and athletes:
+                <strong> 3%</strong> sustains operations and ecosystem growth,
+                <strong> 1%</strong> is paid out immediately to athletes on every trade, and
+                <strong> 1%</strong> is reserved in a pension-style vault for their long-term
+                security.
+              </p>
+            </div>
 
         {/* Athlete Lifetime Support Vault */}
         <section className="mb-16">
